@@ -6,13 +6,12 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-int number;
-
-for (number = 0; number <= 9; number++)
-{
-printf("%d", number);
+ {
+char letter = 'z';
+while (letter >= 'a')
+ {
+putchar(letter);
+letter--;
 }
-
-return (0);
+return 0;
 }
