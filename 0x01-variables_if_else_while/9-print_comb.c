@@ -7,12 +7,14 @@
  */
 int main(void)
 {
-char letter = 'a';
-
-while (letter <= 'z')
+for (int i = 0; i <= 9; i++) 
 {
-putchar(letter);
-letter++;
+putchar('0' + i);
+if (i != 9)
+ {
+putchar(',');
+putchar(' ');
+}
 }
 
 putchar('\n');
