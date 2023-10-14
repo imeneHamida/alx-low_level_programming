@@ -3,16 +3,16 @@
 
 int main(void)
 {
-long long number = 612852475143;
-long long largestPrime = -1;
-
+int number = 612852475;
+int largestPrime = -1;
+int i;
 while (number % 2 == 0)
 {
 largestPrime = 2;
 number /= 2;
 }
 
-for (long long i = 3; i <= sqrt(number); i += 2)
+for (i = 3; i <= sqrt(number); i += 2)
 {
 while (number % i == 0)
 {
@@ -26,7 +26,7 @@ if (number > 2)
 largestPrime = number;
 }
 
-printf("%lld\n", largestPrime);
+printf("%d\n", largestPrime);
 
 return (0);
 }
