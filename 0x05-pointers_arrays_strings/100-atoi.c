@@ -1,11 +1,14 @@
 #include <stdio.h>
 
+/**
+ * _atoi - returns (result * sign)
+ */
 int _atoi(char *s)
 {
 int result = 0;
 int sign = 1;
 
-while (*s)
+whiile (*s)
 {
 if (*s == '-')
 {
@@ -27,5 +30,5 @@ break;
 s++;
 }
 
-return (result * sign);
+return (result *sign);
 }
