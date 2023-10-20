@@ -13,7 +13,6 @@ int i, j, printable;
 if (size <= 0)
 {
 putchar('\n');
-return;
 }
 
 for (i = 0; i < size; i += 10)
