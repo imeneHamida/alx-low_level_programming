@@ -13,8 +13,8 @@ int capitalize = 1;
 while (*ptr)
 {
 if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ','
-|| *ptr == ';' || *ptr == '.' || *ptr == '!' || *ptr == '?' 
-|| *ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' 
+|| *ptr == ';' || *ptr == '.' || *ptr == '!' || *ptr == '?'
+|| *ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{'
 || *ptr == '}')
 {
 capitalize = 1;
@@ -28,7 +28,6 @@ else
 {
 capitalize = 0;
 }
-        
 ptr++;
 }
 

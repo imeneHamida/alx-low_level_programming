@@ -8,7 +8,7 @@
  * a positive integer if s1 is greater,
  * or a negative integer if s2 is greater.
  */
-int _strcmp(const char *s1, const char *s2)
+int _strcmp(char *s1, char *s2)
 {
 while (*s1 && *s2 && *s1 == *s2)
 {

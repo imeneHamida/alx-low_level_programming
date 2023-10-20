@@ -8,7 +8,7 @@
  * @n: The maximum number of bytes to append from src.
  * Return: A pointer to the resulting string (dest).
  */
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 char *result = dest;
 
