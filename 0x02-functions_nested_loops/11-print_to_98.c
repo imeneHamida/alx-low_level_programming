@@ -4,6 +4,7 @@
 /**
  * print_to_98 - Prints natural numbers
  * from 'n' to 98.
+ * @param n - The starting number of the sequence
  */
 void print_to_98(int n)
 {

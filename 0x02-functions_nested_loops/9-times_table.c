@@ -5,7 +5,7 @@
  * table up to a specified limit.
  * @limit: The limit for the multiplication table.
  */
-void times_table(int limit)
+void times_table(void)
 {
 int i;
 int j;
