@@ -8,11 +8,13 @@
  * It will not print anything if 'n' is greater than 15 or less than 0.
  * The output is written using the _putchar function.
  */
-void print_times_table(int n)
+void times_table(int n)
 {
 if (n < 0 || n > 15)
 return;
-int row, column, product;
+int row;
+int column;
+int product;
 
 for (row = 0; row <= n; row++)
 {

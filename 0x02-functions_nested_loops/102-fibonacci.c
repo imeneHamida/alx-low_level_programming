@@ -4,16 +4,20 @@
  * Prints the first 50 Fibonacci numbers,
  * starting with 1 and 2, separated by commas and spaces.
  */
-int main()
+int main(void)
 {
 int n = 50;
-long long first = 1, second = 2, next;
+int first = 1;
+int second = 2;
+int next;
+int i;
 
-printf("%lld, %lld", first, second);
+iprintf("%d, %d", first, second);
 
-for (int i = 3; i <= n; i++) {
+for (i = 3; i <= n; i++)
+{
 next = first + second;
-printf(", %lld", next);
+printf(", %d", next);
 first = second;
 second = next;
 }

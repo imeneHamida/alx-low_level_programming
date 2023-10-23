@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
- * Prints the first 98 Fibonacci numbers,
- * starting with 1 and 2, separated by commas and spaces.
+ * A program to print the first 98 Fibonacci numbers.
+ * @n Number of Fibonacci numbers to print.
  */
-int main()
+int main(void)
 {
 int n = 98;
-int first = 1, second = 2, next;
+int first = 1;
+int second = 2;
+int next;
 int i;
 
 printf("%d, %d", first, second);
