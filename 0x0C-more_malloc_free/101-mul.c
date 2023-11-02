@@ -1,7 +1,14 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "main.h"
 
+/**
+ * is_positive_number - Checks if a string consists of positive digits.
+ * @str: The string to be checked.
+ *
+ * Return: 1 if the string consists of positive digits, 0 otherwise.
+ */
 int is_positive_number(const char *str)
 {
 while (*str)
