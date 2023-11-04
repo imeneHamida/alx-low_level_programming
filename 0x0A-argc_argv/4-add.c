@@ -5,6 +5,14 @@
  * main - Entry point of the program
  * @argc: The number of command-line arguments
  * @argv: An array containing the arguments
+ * Description: This function calculates the sum
+ * of positive numbers provided as command-line arguments.
+ * If no arguments are given, it prints "0." If there are
+ * non-positive numbers or other issues with arguments,
+ * it prints "Error" and returns 1.
+ *
+ * Return: 0 (Success) if the sum is calculated and printed
+ * correctly, 1 (Error) if there are issues with arguments.
  */
 int main(int argc, char *argv[])
 {

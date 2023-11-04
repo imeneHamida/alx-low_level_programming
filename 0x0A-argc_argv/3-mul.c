@@ -5,6 +5,15 @@
  * main - Entry point of the program
  * @argc: The number of command-line arguments
  * @argv: An array containing the command-line arguments
+ * Description: This function multiplies two numbers
+ * provided as command-line arguments and prints the result.
+ * If the correct number of arguments (3) is provided,
+ * it performs the multiplication and prints the result.
+ * If the number of arguments is not as expected,
+ * it prints "Error" and returns 1.
+ *
+ * Return: 0 (Success) if the multiplication is successful,
+ * 1 (Error) if there are incorrect arguments.
  */
 int main(int argc, char *argv[])
 {

@@ -5,6 +5,18 @@
  * main - Entry point of the program
  * @argc: The number of command-line arguments
  * @argv: An array containing the command-line arguments
+ *
+ * Description: This function calculates and prints the
+ * minimum number of coins needed to make change
+ * for a given amount of cents.
+ * It checks the number of arguments, handles negative inputs,
+ * and uses coin denominations of 25, 10, 5, 2, and 1 cent
+ * to calculate the change.
+ * If the number of arguments is not exactly 1, it prints "Error"
+ * and returns 1. If the input is negative, it prints 0.
+ *
+ * Return: 0 (Success) if the minimum number of coins is calculated
+ * and printed correctly, 1 (Error) for issues with the arguments.
  */
 int main(int argc, char *argv[])
 {
