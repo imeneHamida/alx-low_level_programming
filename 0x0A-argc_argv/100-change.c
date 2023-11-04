@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point of the program
+ * @argc: The number of command-line arguments
+ * @argv: An array containing the command-line arguments
+ */
 int main(int argc, char *argv[])
 {
 int cents;
@@ -21,7 +26,7 @@ cents = atoi(argv[1]);
 if (cents < 0)
 {
 printf("0\n");
-return 0;
+return (0);
 }
 
 coins25 = cents / 25;
