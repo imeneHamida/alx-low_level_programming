@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * printFileName - Prints the name of the
- * source file from which it was compiled.
+ * main - Entry point of the program.
+ *
+ * This function prints the name of the
+ * source file from which it was compiled
+ * and returns 0 to indicate successful execution.
+ *
+ * Return: Always 0 (success).
  */
-void printFileName(void)
-{
-printf("%s\n", __FILE__);
-}
-
 int main(void)
 {
-printFileName();
+printf("%s\n", __FILE__);
 return (0);
 }
