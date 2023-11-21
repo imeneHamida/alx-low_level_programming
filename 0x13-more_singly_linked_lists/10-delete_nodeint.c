@@ -9,36 +9,33 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-    listint_t *current, *temp;
-    unsigned int i;
+listint_t *current;
+listint_t *temp;
+unsigned int i;
 
-    if (*head == NULL)
-        return -1; /* If the list is empty, deletion is not possible */
+if (*head == NULL)
+return (-1);
 
-    /* Special case: if index is 0, delete the first node */
-    if (index == 0)
-    {
-        temp = *head;
-        *head = (*head)->next;
-        free(temp);
-        return 1;
-    }
+if (index == 0)
+{
+temp = *head;
+*head = (*head)->next;
+free(temp);
+return (1);
+}
 
-    /* Traverse to the node before the one to be deleted */
-    current = *head;
-    for (i = 0; current != NULL && i < index - 1; i++)
-    {
-        current = current->next;
-    }
+current = *head;
+for (i = 0; current != NULL && i < index - 1; i++)
+{
+current = current->next;
+}
 
-    /* If index is out of bounds, return -1 */
-    if (current == NULL || current->next == NULL)
-        return -1;
+if (current == NULL || current->next == NULL)
+return (-1);
 
-    /* Delete the node at the specified index */
-    temp = current->next;
-    current->next = temp->next;
-    free(temp);
+temp = current->next;
+current->next = temp->next;
+free(temp);
 
-    return 1;
+return (1);
 }
